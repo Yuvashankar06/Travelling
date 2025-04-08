@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Css/Travel.css" />
+    <script src="Js/Travel.js"></script>
+    <script src="Js/dark.js"></script>
+    <!-- <script src="Js/about.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="Images/Logo.jpg" alt="TravelSite Logo"
+        /></a>
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          id="searchBox"
+          placeholder="Search Destinations..."
+          autocomplete="off"
+        />
+        <div id="autocomplete-list"></div>
+      </div>
+      <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+      <i class="fa-solid fa-bars menu-icon" id="menu-toggle"></i>
+      <nav>
+        <ul class="navbar">
+          <li class="dropdown">
+            Destinations
+            <ul class="dropdown-menu">
+              <li><a href="Destination.html?category=all">All</a></li>
+              <li><a href="Destination.html?category=europe">Europe</a></li>
+              <li><a href="Destination.html?category=asia">Asia</a></li>
+              <li><a href="Destination.html?category=mountains">America</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            Travel Guides
+            <ul class="dropdown-menu">
+              <li><a href="Travel.html?category=all">All</a></li>
+              <li><a href="Travel.html?category=budget">Budget</a></li>
+              <li><a href="Travel.html?category=solo">Solo</a></li>
+              <li><a href="Travel.html?category=family">Family</a></li>
+            </ul>
+          </li>
+          <li><a href="Community.html">Community</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="guide-filters">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="budget">Budget Travel</button>
+      <button class="filter-btn" data-category="solo">Solo Travel</button>
+      <button class="filter-btn" data-category="family">Family Trips</button>
+    </div>
+
+    <div id="guideCards" class="guide-grid"></div>
+
+    <section class="checklist-section">
+      <h2>Packing Checklist</h2>
+      <ul id="checklist" class="checklist">
+        <li>
+          <input type="checkbox" id="passport" />
+          <label for="passport">Passport</label>
+        </li>
+        <li>
+          <input type="checkbox" id="clothes" />
+          <label for="clothes">Clothes</label>
+        </li>
+        <li>
+          <input type="checkbox" id="toiletries" />
+          <label for="toiletries">Toiletries</label>
+        </li>
+        <li>
+          <input type="checkbox" id="charger" />
+          <label for="charger">Phone Charger</label>
+        </li>
+      </ul>
+    </section>
+    <section class="weather-widget">
+      <h2>Weather Widget</h2>
+      <select id="weatherCity">
+        <option value="Paris, France">Paris, France</option>
+        <option value="Tokyo, Japan">Tokyo, Japan</option>
+        <option value="New York, USA">New York, USA</option>
+      </select>
+      <p id="weatherOutput">Loading weather...</p>
+    </section>
+
+    <section class="adventure-planner">
+      <h2>Adventure Planner</h2>
+      <p>Drag from available destinations and reorder your trip:</p>
+      <div class="planner-columns">
+        <div class="available-column">
+          <h3>Available Destinations</h3>
+          <ul id="availableDestinationsList" class="drag-list"></ul>
+        </div>
+
+        <div class="itinerary-column">
+          <h3>Your Trip Itinerary</h3>
+          <ul id="destinationList" class="drop-list"></ul>
+          <button id="saveItinerary">Save Itinerary</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>About Travel Hub</h2>
+          <p>Your ultimate travel companion...</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="Destination.html">Destinations</a></li>
+            <li><a href="Travel.html">Travel Guides</a></li>
+            <li><a href="Community.html">Community</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h3>Subscribe</h3>
+          <form>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>©2022 Company Name. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy & Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

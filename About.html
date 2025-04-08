@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Css/about.css" />
+    <script src="Js/dark.js" defer></script>
+    <script src="Js/about.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="Images/Logo.jpg" alt="TravelSite Logo"
+        /></a>
+      </div>
+      <!-- <div class="search">
+        <input
+          type="text"
+          id="searchBox"
+          placeholder="Search Destinations..."
+          autocomplete="off"
+        />
+        <div id="autocomplete-list"></div>
+      </div> -->
+      <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+      <i class="fa-solid fa-bars menu-icon" id="menu-toggle"></i>
+      <nav>
+        <ul class="navbar">
+          <li class="dropdown">
+            Destinations
+            <ul class="dropdown-menu">
+              <li><a href="Destination.html?category=all">All</a></li>
+              <li><a href="Destination.html?category=europe">Europe</a></li>
+              <li><a href="Destination.html?category=asia">Asia</a></li>
+              <li><a href="Destination.html?category=mountains">America</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            Travel Guides
+            <ul class="dropdown-menu">
+              <li><a href="Travel.html?category=all">All</a></li>
+              <li><a href="Travel.html?category=budget">Budget</a></li>
+              <li><a href="Travel.html?category=solo">Solo</a></li>
+              <li><a href="Travel.html?category=family">Family</a></li>
+            </ul>
+          </li>
+          <li><a href="Community.html">Community</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="mission">
+      <div class="mission-content">
+        <h2>Our Mission</h2>
+        <p>
+          We inspire and assist travelers worldwide by providing expert travel
+          tips, guides, and recommendations.
+        </p>
+      </div>
+      <div class="mission-image">
+        <img src="Images/Travel.jpg" alt="Travel Mission" />
+      </div>
+    </section>
+
+    <section id="founder">
+      <div class="founder-image">
+        <img src="images/Logo.jpg" alt="Founder" />
+      </div>
+      <div class="founder-content">
+        <h2>Meet Our Founder</h2>
+        <p>
+          Yuvashankar, a passionate traveler, started this platform to share
+          unforgettable travel experiences.
+        </p>
+      </div>
+    </section>
+
+    <section id="partnerships">
+      <h2>Our Partners</h2>
+      <div class="partners-grid">
+        <div class="partner">✈️ Airlines</div>
+        <div class="partner">🏨 Hotels</div>
+        <div class="partner">🚗 Travel Agencies</div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>About Travel Hub</h2>
+          <p>Your ultimate travel companion...</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="Destination.html">Destinations</a></li>
+            <li><a href="Travel.html">Travel Guides</a></li>
+            <li><a href="Community.html">Community</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h3>Subscribe</h3>
+          <form>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>©2022 Company Name. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy & Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="Css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="Js/contact.js"></script>
+    <script src="Js/dark.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="Images/Logo.jpg" alt="TravelSite Logo"
+        /></a>
+      </div>
+      <!-- <div class="search">
+        <input
+          type="text"
+          id="searchBox"
+          placeholder="Search Destinations..."
+          autocomplete="off"
+        />
+
+        <div id="autocomplete-list"></div>
+      </div> -->
+      <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+      <i class="fa-solid fa-bars menu-icon" id="menu-toggle"></i>
+      <nav>
+        <ul class="navbar">
+          <li class="dropdown">
+            Destinations
+            <ul class="dropdown-menu">
+              <li><a href="Destination.html?category=all">All</a></li>
+              <li><a href="Destination.html?category=europe">Europe</a></li>
+              <li><a href="Destination.html?category=asia">Asia</a></li>
+              <li><a href="Destination.html?category=mountains">America</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            Travel Guides
+            <ul class="dropdown-menu">
+              <li><a href="Travel.html?category=all">All</a></li>
+              <li><a href="Travel.html?category=budget">Budget</a></li>
+              <li><a href="Travel.html?category=solo">Solo</a></li>
+              <li><a href="Travel.html?category=family">Family</a></li>
+            </ul>
+          </li>
+          <li><a href="Community.html">Community</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contact-container">
+      <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <input type="text" id="subject" placeholder="Subject" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="formStatus"></div>
+      </section>
+      <section class="live-chat">
+        <h2>Live Chat</h2>
+        <div class="chat-box" id="chatBox"></div>
+        <input type="text" id="chatInput" placeholder="Type a message..." />
+        <button id="sendBtn">Send</button>
+      </section>
+
+      <div id="mapContainer">
+        <iframe
+          id="googleMap"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8709050735785!2d75.7873!3d26.9124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3d27cc1e1b5%3A0x6e38af7f7b8c9d6f!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1688216745623!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+        <div id="customMarker"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>About Travel Hub</h2>
+          <p>Your ultimate travel companion...</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="Destination.html">Destinations</a></li>
+            <li><a href="Travel.html">Travel Guides</a></li>
+            <li><a href="Community.html">Community</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h3>Subscribe</h3>
+          <form>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>©2022 Company Name. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy & Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+l
