@@ -52,74 +52,63 @@
     .highlight{
       background-color: #8d36f6;
     }
+
+  // Footer
   
-    footer {
-        background-color: #1c1c1c; // Dark footer background
-        color: #e0e0e0; // Light text for readability
-    
-        .footer-logo {
-          h2 {
-            color: #ffffff;
-          }
-    
-          p {
-            color: #cccccc;
-          }
+  footer {
+    background-color:#121212;
+    color: #fff;
+  
+    .footer-section {
+      ul {
+        list-style: none;
+        padding: 0;
+        a{
+          text-decoration: none;
+          color: blueviolet;
         }
-    
-        .footer-section {
-          h3 {
-            color: #ffffff;
-          }
-    
-          ul {
-            a{
-              color: #8d36f6;
-            }
-            li {
-              a {
-                color: #cccccc;
-    
-                &:hover {
-                  color: #ffffff;
-                }
-              }
-            }
-          }
-    
-          form {
-            input {
-              background-color: #333;
-              color: #ffffff;
-              border: 1px solid #555;
-            }
-    
-            button {
-              background-color: #333;
-              color: #ffffff;
-    
-              &:hover {
-                background-color: #671aec;
-                color: #fff;
-              }
-            }
-          }
-        }
-    
-        .footer-bottom {
-          border-top: 2px solid #444;
-    
-          .footer-bottom-links {
-            a {
-              color: #bbbbbb;
-    
-              &:hover {
-                color: #ffffff;
-              }
+        li {
+          a {
+            color: white;
+            &:hover {
+              color: #4f29f6;
+              transform: scale(1.05);
             }
           }
         }
       }
+  
+      form {
+        button {
+          background-color: #fff;
+          color: #4f29f6;
+  
+          &:hover {
+            background-color: #671aec;
+            transform: scale(1.05);
+            color: #fff;
+          }
+        }
+      }
+    }
+  
+    .footer-bottom {
+      border-top: 2px solid #ccc;
+      .footer-bottom-links {
+        margin-top: 10px;
+        a {
+          color: black;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
+
+
+      //Destination
   
     .explore-btn {
       background-color: #444;

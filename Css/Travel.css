@@ -428,48 +428,44 @@ footer .footer-bottom .footer-bottom-links a:hover {
   background-color: #8d36f6;
 }
 .dark-mode footer {
-  background-color: #1c1c1c;
-  color: #e0e0e0;
+  background-color: #121212;
+  color: #fff;
 }
-.dark-mode footer .footer-logo h2 {
-  color: #ffffff;
-}
-.dark-mode footer .footer-logo p {
-  color: #cccccc;
-}
-.dark-mode footer .footer-section h3 {
-  color: #ffffff;
+.dark-mode footer .footer-section ul {
+  list-style: none;
+  padding: 0;
 }
 .dark-mode footer .footer-section ul a {
-  color: #8d36f6;
+  text-decoration: none;
+  color: blueviolet;
 }
 .dark-mode footer .footer-section ul li a {
-  color: #cccccc;
+  color: white;
 }
 .dark-mode footer .footer-section ul li a:hover {
-  color: #ffffff;
-}
-.dark-mode footer .footer-section form input {
-  background-color: #333;
-  color: #ffffff;
-  border: 1px solid #555;
+  color: #4f29f6;
+  transform: scale(1.05);
 }
 .dark-mode footer .footer-section form button {
-  background-color: #333;
-  color: #ffffff;
+  background-color: #fff;
+  color: #4f29f6;
 }
 .dark-mode footer .footer-section form button:hover {
   background-color: #671aec;
+  transform: scale(1.05);
   color: #fff;
 }
 .dark-mode footer .footer-bottom {
-  border-top: 2px solid #444;
+  border-top: 2px solid #ccc;
+}
+.dark-mode footer .footer-bottom .footer-bottom-links {
+  margin-top: 10px;
 }
 .dark-mode footer .footer-bottom .footer-bottom-links a {
-  color: #bbbbbb;
+  color: black;
 }
 .dark-mode footer .footer-bottom .footer-bottom-links a:hover {
-  color: #ffffff;
+  text-decoration: underline;
 }
 .dark-mode .explore-btn {
   background-color: #444;

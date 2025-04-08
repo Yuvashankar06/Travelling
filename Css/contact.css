@@ -382,6 +382,166 @@ footer .footer-bottom .footer-bottom-links a:hover {
   }
 }
 
+.dark-mode body {
+  background-color: #121212;
+  color: #eee;
+}
+.dark-mode header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #1c1c1c;
+  color: white;
+}
+.dark-mode header .navbar li a {
+  color: white;
+}
+.dark-mode header .dropdown-menu {
+  background-color: #2c2c2c;
+}
+.dark-mode header .dropdown-menu li a {
+  color: #eee;
+}
+.dark-mode header .dropdown-menu li a:hover {
+  background-color: #8d36f6;
+}
+.dark-mode header .search input {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+.dark-mode header .search #autocomplete-list {
+  background-color: black;
+}
+.dark-mode header .search #autocomplete-list li {
+  color: white;
+}
+.dark-mode header .search #autocomplete-list li:hover {
+  background-color: blueviolet;
+}
+.dark-mode header .menu-icon {
+  color: #fff;
+}
+.dark-mode .highlight {
+  background-color: #8d36f6;
+}
+.dark-mode footer {
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.dark-mode footer .footer-section ul a {
+  text-decoration: none;
+  color: blueviolet;
+}
+.dark-mode footer .footer-section ul li a {
+  color: white;
+}
+.dark-mode footer .footer-section ul li a:hover {
+  color: #4f29f6;
+  transform: scale(1.05);
+}
+.dark-mode footer .footer-section form button {
+  background-color: #fff;
+  color: #4f29f6;
+}
+.dark-mode footer .footer-section form button:hover {
+  background-color: #671aec;
+  transform: scale(1.05);
+  color: #fff;
+}
+.dark-mode footer .footer-bottom {
+  border-top: 2px solid #ccc;
+}
+.dark-mode footer .footer-bottom .footer-bottom-links {
+  margin-top: 10px;
+}
+.dark-mode footer .footer-bottom .footer-bottom-links a {
+  color: black;
+}
+.dark-mode footer .footer-bottom .footer-bottom-links a:hover {
+  text-decoration: underline;
+}
+.dark-mode .explore-btn {
+  background-color: #444;
+}
+.dark-mode .explore-btn:hover {
+  background-color: #8d36f6;
+}
+.dark-mode .destination-card {
+  background-color: #2c2c2c;
+  color: #eee;
+}
+.dark-mode .destination-card h3 {
+  color: #fff;
+}
+.dark-mode .traveler-stories {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+.dark-mode #map-section {
+  background-color: #1e1e1e;
+}
+.dark-mode #map-section h2 {
+  color: white;
+}
+.dark-mode #guideCards .guide-card {
+  background: #fff;
+}
+.dark-mode #guideCards .guide-card h3 {
+  color: #333;
+}
+.dark-mode #guideCards .guide-card p {
+  color: #121212;
+}
+.dark-mode .available-column,
+.dark-mode .itinerary-column {
+  color: #1e1e1e;
+}
+.dark-mode .available-column h3,
+.dark-mode .itinerary-column h3 {
+  color: #555;
+}
+.dark-mode .drag-list,
+.dark-mode .drop-list {
+  border: 2px dashed #333;
+  background-color: black;
+}
+.dark-mode .drag-list li,
+.dark-mode .drop-list li {
+  background-color: black;
+}
+.dark-mode .forum h2 {
+  color: #1e1e1e;
+}
+.dark-mode .forum .post-container .post {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.dark-mode .forum .post-container .post .content {
+  color: #1e1e1e;
+}
+.dark-mode #photo-gallery h2 {
+  color: #1c1c1c;
+}
+.dark-mode #photo-gallery #gallery-upload {
+  border: 1px solid #ccc;
+  color: #1e1e1e;
+}
+.dark-mode #poll-options label {
+  color: #121212;
+}
+.dark-mode .partner {
+  color: #1c1c1c;
+}
+.dark-mode .card-content h3 {
+  color: #121212;
+}
+
 * {
   margin: 0;
   padding: 0;
