@@ -1,10 +1,9 @@
-@import "header";
-@import "footer";
-@import "darkmode";
+@use "header";
+@use "footer";
+@use "darkmode";
 *{
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
 }
 html,body{
     margin: 0;
@@ -136,6 +135,10 @@ body{
     }
 }
 @media (max-width: 768px) {
+  .destination-filters{
+    display: flex;
+    flex-direction: column;
+  }
 
     h2 {
       font-size: 1.5rem;

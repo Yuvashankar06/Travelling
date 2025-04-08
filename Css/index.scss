@@ -1,4 +1,4 @@
-// @import "header";
+@import "header";
 @import "footer";
 @import "darkmode";
 *{
@@ -26,165 +26,165 @@ body{
     }
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #369af2;
-  padding: 15px;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1000; // Lower than dropdown
+// header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   background-color: #369af2;
+//   padding: 15px;
+//   flex-wrap: wrap;
+//   position: relative;
+//   z-index: 1000; // Lower than dropdown
 
 
-  .logo a{
-    text-decoration: none;
-    color: #121212;
-    transition: 0.3s ease-in;
-    img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-    }
-  }
+//   .logo a{
+//     text-decoration: none;
+//     color: #121212;
+//     transition: 0.3s ease-in;
+//     img {
+//         width: 50px;
+//         height: 50px;
+//         border-radius: 50%;
+//     }
+//   }
 
-  .search {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      input {
-          margin-left: 20px;
-          padding: 10px 14px;
-          border-radius: 8px;
-          border: none;
-          width: 100%;
-          max-width: 400px;
-          font-size: 16px;
-          border: 1px solid #ccc;
-          outline: none;
+//   .search {
+//       position: relative;
+//       display: flex;
+//       justify-content: center;
+//       input {
+//           margin-left: 20px;
+//           padding: 10px 14px;
+//           border-radius: 8px;
+//           border: none;
+//           width: 100%;
+//           max-width: 400px;
+//           font-size: 16px;
+//           border: 1px solid #ccc;
+//           outline: none;
 
-          &:focus {
-              border-color: #007bff;
-              box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
-          }
-      }
+//           &:focus {
+//               border-color: #007bff;
+//               box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+//           }
+//       }
 
-      #autocomplete-list {
-          position: absolute;
-          top: calc(100% + 5px);
-          z-index: 9999; 
-          background-color: white;
-          width: 90%;
-          max-width: 350px;
-          margin-top: 4px;
-          margin-left: 30px;
-          border-radius: 8px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          overflow: hidden;
+//       #autocomplete-list {
+//           position: absolute;
+//           top: calc(100% + 5px);
+//           z-index: 9999; 
+//           background-color: white;
+//           width: 90%;
+//           max-width: 350px;
+//           margin-top: 4px;
+//           margin-left: 30px;
+//           border-radius: 8px;
+//           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//           overflow: hidden;
 
-          li {
-              list-style: none;
-              padding: 10px 14px;
-              cursor: pointer;
-              transition: background-color 0.2s ease;
+//           li {
+//               list-style: none;
+//               padding: 10px 14px;
+//               cursor: pointer;
+//               transition: background-color 0.2s ease;
 
-              &:hover {
-                  background-color: #f1f1f1;
-              }
-          }
-      }
-  }
-  button#darkModeToggle {
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      margin-left: auto;
-      padding: 0.5rem;
-      transition: transform 0.3s ease;
+//               &:hover {
+//                   background-color: #f1f1f1;
+//               }
+//           }
+//       }
+//   }
+//   button#darkModeToggle {
+//       background: none;
+//       border: none;
+//       font-size: 1.5rem;
+//       cursor: pointer;
+//       margin-left: auto;
+//       padding: 0.5rem;
+//       transition: transform 0.3s ease;
   
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
+//       &:hover {
+//         transform: scale(1.1);
+//       }
+//     }
   
-    body.dark-mode & {
-      background-color: #1c1c1c;
-    }
+//     body.dark-mode & {
+//       background-color: #1c1c1c;
+//     }
 
-  .menu-icon {
-      display: none; // Shown only in mobile view
-      font-size: 25px;
-      cursor: pointer;
-      color: white;
-      margin-right: 10px;
-  }
+//   .menu-icon {
+//       display: none; // Shown only in mobile view
+//       font-size: 25px;
+//       cursor: pointer;
+//       color: white;
+//       margin-right: 10px;
+//   }
 
-  nav {
-      .navbar {
-          list-style: none;
-          display: flex;
-          margin-right: 50px;
-          gap: 30px;
-          padding: 0;
+//   nav {
+//       .navbar {
+//           list-style: none;
+//           display: flex;
+//           margin-right: 50px;
+//           gap: 30px;
+//           padding: 0;
 
-          li {
-              position: relative;
-              color: white;
-              font-weight: bold;
-              font-size: 20px;
-              cursor: pointer;
+//           li {
+//               position: relative;
+//               color: white;
+//               font-weight: bold;
+//               font-size: 20px;
+//               cursor: pointer;
 
-              &:hover {
-                  transform: scale(1.05);
-              }
-          }
+//               &:hover {
+//                   transform: scale(1.05);
+//               }
+//           }
 
-          .dropdown-menu1 ,.dropdown-menu{
-              display: none;
-              position: absolute;
-              left: 0;
-              top: 100%;
-              background: white;
-              border-radius: 5px;
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-              padding: 10px;
-              min-width: 150px;
-              z-index: 9999; // ✅ Fix dropdown behind navbar issue
+//           .dropdown-menu1 ,.dropdown-menu{
+//               display: none;
+//               position: absolute;
+//               left: 0;
+//               top: 100%;
+//               background: white;
+//               border-radius: 5px;
+//               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//               padding: 10px;
+//               min-width: 150px;
+//               z-index: 9999; // ✅ Fix dropdown behind navbar issue
 
-              li {
-                  font-size: 14px;
-                  list-style: none;
+//               li {
+//                   font-size: 14px;
+//                   list-style: none;
 
-                  a {
-                      text-align: center;
-                      text-decoration: none;
-                      color: black;
-                      display: block;
-                      padding: 5px 10px;
-                  }
+//                   a {
+//                       text-align: center;
+//                       text-decoration: none;
+//                       color: black;
+//                       display: block;
+//                       padding: 5px 10px;
+//                   }
 
-                  &:hover {
-                      background-color: whitesmoke;
-                      border-radius: 5px;
-                  }
-              }
-          }
+//                   &:hover {
+//                       background-color: whitesmoke;
+//                       border-radius: 5px;
+//                   }
+//               }
+//           }
 
-          .dropdown:hover .dropdown-menu,
-          .dropdown1:hover .dropdown-menu1 {
-              display: block;
-              visibility: visible;
-              opacity: 1;
-          }
+//           .dropdown:hover .dropdown-menu,
+//           .dropdown1:hover .dropdown-menu1 {
+//               display: block;
+//               visibility: visible;
+//               opacity: 1;
+//           }
 
-          li a {
-              text-decoration: none;
-              color: white;
-          }
-      }
-  }
-}
+//           li a {
+//               text-decoration: none;
+//               color: white;
+//           }
+//       }
+//   }
+// }
 .highlight {
     background-color: yellow;
     font-weight: bold;

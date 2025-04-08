@@ -143,6 +143,7 @@ header {
                     }
 
                     &:hover {
+                        width: 88%;
                         background-color: whitesmoke;
                         border-radius: 5px;
                     }
@@ -196,7 +197,7 @@ header {
         align-items: center;
         padding: 10px;
         border-top: 2px solid white;
-        // z-index: 1000;
+        z-index: 1000!important;
 
         .navbar {
             display: flex;
@@ -249,7 +250,7 @@ header {
                         font-weight: normal;
                         width: 100%;
                         white-space: nowrap;
-                        z-index: 1000;
+                        z-index: 1000 !important;
 
                         &:hover {
                             background-color: #f1f1f1;
