@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector("nav");
 
   // Initialize map
-  const map = L.map("map").setView([20, 0], 2);
+  const map = L.map("map").setView([13.1269, 79.2551], 15);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "© OpenStreetMap contributors",
   }).addTo(map);
@@ -80,14 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 🔍 Live search with keyword highlighting
-  // searchBox.addEventListener("input", () => {
-  //   const query = searchBox.value.toLowerCase();
-  //   const filtered = allDestinations.filter(dest =>
-  //     dest.name.toLowerCase().includes(query)
-  //   );
-  //   renderDestinations(filtered, query); // highlight match
-  // });
   searchBox.addEventListener("input", () => {
     const query = searchBox.value.toLowerCase();
     const filtered = allDestinations.filter(dest =>
@@ -95,7 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     renderDestinations(filtered, query);
   
-    // autocomplete suggestions
     autocompleteList.innerHTML = `
       <ul>
         ${filtered.map(dest => `<li>${highlight(dest.name, query)}</li>`).join("")}
@@ -103,8 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   });
   
-
-  // Enter key → scroll to map & zoom
   searchBox.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       const query = searchBox.value.toLowerCase();
@@ -137,7 +126,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const filtered = allDestinations.filter(dest => dest.name.toLowerCase().includes(query));
 
     renderDestinations(filtered);
-    // autocompleteList.innerHTML = filtered.map(dest => `<li>${dest.name}</li>`).join("");
     autocompleteList.innerHTML = `
   <ul>
     ${filtered.map(dest => `<li>${highlight(dest.name, query)}</li>`).join("")}

@@ -1,6 +1,7 @@
 @import "header";
 @import "footer";
 @import "darkmode";
+@import "variables";
 
 * {
   margin: 0;
@@ -21,14 +22,9 @@ body {
   max-height: 100vh;
   max-width: 100vw;
   box-sizing: border-box;
-  background-color: #ffffff;
-    color: #222;
-    transition: background-color 0.3s ease, color 0.3s ease;
-
-    &.dark-mode {
-      background-color: #121212;
-      color: #eee;
-    }
+  background-color: var(--bgcolor);
+  color:var(--bodycolor);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 // ========== Guide Filters ==========

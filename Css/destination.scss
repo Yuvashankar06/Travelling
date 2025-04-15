@@ -1,6 +1,7 @@
 @use "header";
 @use "footer";
 @use "darkmode";
+@use "variables";
 *{
     margin: 0;
     padding: 0;
@@ -15,16 +16,10 @@ html,body{
 body{
     max-height: 100vh;
     max-width: 100vw;
-    // box-sizing: border-box;
-    overflow-x: hidden;
-    background-color: #ffffff;
-    color: #222;
+    box-sizing: border-box;
+    background-color:var(--bgcolor);
+    color: var(--bodycolor);
     transition: background-color 0.3s ease, color 0.3s ease;
-
-    &.dark-mode {
-      background-color: #121212;
-      color: #eee;
-    }
 }
 
 .destination-filters {
@@ -138,6 +133,14 @@ body{
   .destination-filters{
     display: flex;
     flex-direction: column;
+  }
+  .destination-card{
+    margin: auto;
+    height: auto;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  
   }
 
     h2 {

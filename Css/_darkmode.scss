@@ -1,14 +1,5 @@
 .dark-mode {
-    body {
-      background-color: #121212;
-      color: #eee;
-    }
-  
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
         background-color: #1c1c1c;
         color: white;
   
@@ -40,9 +31,9 @@
         li {
             color: white;
 
-            // &:hover {
-            //     background-color:blueviolet;
-            // }
+            &:hover {
+                background-color:blueviolet;
+            }
         }
     }
   
@@ -57,7 +48,7 @@
   // Footer
   
   footer {
-    background-color:#121212;
+    background-color:#1e1e1e;
     color: #fff;
     border-top: 2px solid blueviolet;
   
